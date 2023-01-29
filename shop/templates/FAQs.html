@@ -1,0 +1,178 @@
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+<title>
+	faqs.html</title>
+<style>
+	body{
+		background-color: mintcream;
+
+	}
+.link{
+	margin-top: 50px;/*margin-left: 10px;margin-right: 10px*/;
+	height: 350px;
+	background-image: url("about-us-banner.jpg");
+	color: white;opacity: 1.5;
+	}
+	h1{
+		color: maroon;
+	}
+	.link2{
+		height: 40px;
+		background-color: skyblue;/*margin-left: 5px;margin-right:5px*/ ;
+	}
+	.link3{
+       height: 60px;
+       margin-left: 10px;/*margin-right: 10px*/;background-color: darkgrey;
+	}
+	.link4{
+		margin-top: 20px;background-color: skyblue;
+	}.link5{
+       height: 60px;
+       /*margin-left: 10px;margin-right: 10px;*/background-color:darkgrey;
+	}
+	h5{
+		color: white;
+	}
+	.button{margin-top: 20px;margin-left: 600px;padding: 20px; column-gap: 10px;}
+h4{
+	color: black;
+}
+	
+	
+
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+
+  <a class="navbar-brand" href="{% url 'shop:home' %}"><b>Home</b></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'shop:aboutus' %}">AboutUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'shop:faqs' %}"><b>FAQs</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="{% url 'shop:gallery' %}">
+        <b>Gallery</b>
+        </a>
+        </li>
+		{% if user.is_authenticated %}
+        <li class="nav-item">
+        <a class="nav-link " href="{% url 'authenticate:logout' %}">
+        <b>Logout</b>
+        </a>
+        </li>
+
+          {% else %}
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " href="{% url 'authenticate:login' %}">
+        <b>Login</b>
+        </a>
+        </li>
+        {% endif %}
+
+    </ul>
+    
+
+    </a>
+   </div>
+</nav>
+
+	<div class="link"></div>
+	<hr>
+<h1 align="center">Frequently Asked Questions</h1>
+<hr>
+<div>
+
+<div class="link2">
+	<marquee direction=left scrollamount=10><h4 align="center">What is Petocare?</h4></marquee>
+</div>
+
+<div class="link3">
+	<h5 align="center">Petocare is a pet-Sitting management System.We help people who are tensed by means of Their Pets while they are out of station or away from their Homes; here we provide easy accessibility to Pet-boarding Businessess.We provide these services 24 x 7 through our Online platform.
+	</h5>
+</div>
+<!--***-->
+
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">Who will help?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center">For your help, we are providing Proffesional Pet-sitters who will fulfill your objectives, preferences and type of breed you are having be it Dogs or cats .<br> </h5>
+</div>
+<!--***-->
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">What is Pricing structure ?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center"> Yes! You read it right. The Prices are REASONABLE totally and we mean it. You get Charged according to the Services you get at no extra cost.</h5>
+</div>
+<!--***-->
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">Who is Main Pet- Sitter?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center">Mr. Vikram Sahai and his team; Pet-Sitters are licenced, Trained and experienced person and professional Vetenary handling Experts. </h5>
+</div>
+<!--***-->
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">What will be the cost?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center">You can pay online directly at our Website according your Packages and time duration you choose for your Loved-ones. 
+	.</h5>
+</div>
+<!--***-->
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">How to communicate with our professionals?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center"> By visiting the Locate the physical addresses or video call our People :<br><u> Exchanging Words with your Pet-Sitters</u> &emsp;&emsp; <u>Chatting online on your devices</u> &emsp;&emsp; <u>Speaking over with phone calls , Video Calls</u>
+	</h5>
+</div>
+<!--***-->
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">Our Roles?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center">We are providing these services on personalized Basis and <br> Our mission to build platform and making communication more better between user and your pets.</h5>
+</div>
+<!--***-->
+<div class="link4">
+	<marquee direction=left scrollamount=10><h4 align="center">How can we start?</h4></marquee>
+</div>
+
+<div class="link5">
+	<h5 align="center">click <a href="{% url 'shop:home' %}"> Home </a> to start</h5>
+</div>
+<!--***-->
+
+</div>
+
+  <hr>
+  <div class="button">
+<a href="{% url 'shop:home' %}"><button type="button" class="btn btn-outline-primary">Home</button></a>
+<a href="{% url 'shop:faqs' %}"><button type="button" class="btn btn-outline-secondary">FAQs</button></a>
+<a href="{% url 'shop:aboutus' %}"><button type="button" class="btn btn-outline-danger">About Us</button></a>
+
+</body>
+
+</body></html>

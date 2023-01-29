@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" placeholder="Pet Name" name="pet_name"> <br>
+  <input type="text" placeholder="Pet Age" name="pet_age"> <br>
+  <input type="text" placeholder="Pet Type" name="pet_type"> <br>
+  <input type="text" placeholder="Breed Name" name="breed_name"> <br>
+  <input type="text" placeholder="Pet Weight" name="weight"> <br>
+  <input type="time" placeholder="time" name="time"><br>
+    <input type="text" placeholder="Meal" name="meal"><br>
+    <input type="text" placeholder="special_care" name="special_care"><br>
+    <input type="Submit" value="Submit">
+
+</form>
+
+</body>
+</html>
